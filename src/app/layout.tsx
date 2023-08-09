@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "../css/globals.css";
+import Navbar from "@/components/ui/layout/Navbar";
+import Footer from "@/components/ui/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Recipe Away",
@@ -21,7 +23,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" className={`${inter.variable} font-sans`}>
       <body>
-        <main className=" bg-primary">{children}</main>
+        <Navbar />
+        <main className="selection:bg-primary selection:text-white">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
