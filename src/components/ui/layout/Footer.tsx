@@ -11,7 +11,7 @@ const Footer = () => {
         <Logo />
         <ul className="flex flex-col space-y-4 mt-4">
           <li>
-            Want to learn cook but confused to start from what? let&rsquo;s
+            Want to learn cook but confused to start from what? let&apos;s
             cooking
           </li>
           <li>

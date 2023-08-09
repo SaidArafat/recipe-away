@@ -13,7 +13,7 @@ const Blog = () => {
             Variety of food and beverage recipes healthy food
           </h2>
           <p>
-            Want to learn cook but confused to start from what? let's
+            Want to learn cook but confused to start from what? let&apos;s
             immediately register your account and look for the recipes.
           </p>
           <Button onClick={() => console.log("View Details")}>

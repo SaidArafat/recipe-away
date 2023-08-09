@@ -34,7 +34,7 @@ const Hero = () => {
             with our popular food recipes
           </h1>
           <p>
-            Want to learn cook but confused to start from what? let's
+            Want to learn cook but confused to start from what? let&apos;s
             immediately register your account and look for the recipes.
           </p>
           <SearchInput />
