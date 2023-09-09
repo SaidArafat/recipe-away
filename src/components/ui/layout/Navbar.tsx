@@ -19,6 +19,8 @@ const Navbar = () => {
     { path: "/feedback", label: "feedback" },
   ];
 
+  const handleClick = () => setVisible(false);
+
   return (
     <nav
       className={`px-8 md:px-14 lg:px-16 py-3 md:flex md:items-center md:justify-between  font-medium fixed top-0 left-0 right-0 z-50 bg-white ${
@@ -58,6 +60,7 @@ const Navbar = () => {
       >
         {links.map(({ path, label }, index) => (
           <li
+            onClick={handleClick}
             key={index}
             className={`capitalize hover:text-primary duration-500 transition-all ${
               path === pathname && "text-primary"
@@ -66,7 +69,7 @@ const Navbar = () => {
             <Link href={path}>{label}</Link>
           </li>
         ))}
-        <li>
+        <li onClick={handleClick}>
           <SearchModal />
         </li>
       </ul>
